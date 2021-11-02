@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.alert {
+  color: red;
+  background-color: #fbdad8;
+  width: 80%;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 1.2em;
+  margin: 20px 0;
+  display: none;
+}
+body {
+  background-color: #353945;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container {
+  background-color: white;
+  max-width: 500px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.amount {
+  display: flex;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+/* h2 {
+  text-align: center;
+  width: 100%;
+} */
+h2 {
+  margin-bottom: 20px;
+}
+.monthlyPayment {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+.monthlyPaymentInput {
+  width: 100%;
+}
+.totalPayment {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+.totalPaymentInput {
+  width: 100%;
+}
+.totalInterest {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+.totalInterestInput {
+  width: 100%;
+}
+.results {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.im {
+  display: none;
+}
+.amountInput {
+  width: 90%;
+  height: 2.5em;
+}
+.interest {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.interestInput {
+  width: 90%;
+  height: 2.5em;
+}
+.icon {
+  /* width: 10%; */
+  text-align: center;
+  margin-right: 20px;
+  font-size: 1.7em;
+}
+h1 {
+  text-align: center;
+}
+.yearsInput {
+  width: 100%;
+
+  height: 2.5em;
+}
+form {
+  width: 80%;
+}
+.calculate {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #353944;
+  color: white;
+  height: 2em;
+}

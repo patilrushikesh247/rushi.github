@@ -1,0 +1,38 @@
+const form=document.querySelector("form")
+form.addEventListener("submit",(e)=>{
+    document.querySelector(".results").style.display="none";
+    
+    const amounti=document.querySelector(".amountInput");
+    const interesti=document.querySelector(".interestInput");
+    const yearsi=document.querySelector(".yearsInput");
+    const principle=parseFloat(amounti.value);
+    const interest=parseFloat(interesti.value)/100/12;
+    const years=parseFloat(yearsi.value)*12;
+    const x=Math.pow(1+interest,years);
+    const monthly=(principle*x*interest)/(x-1);
+    if(isFinite(monthly))
+    {
+        document.querySelector(".monthlyPaymentInput").value=monthly.toFixed(2)
+        document.querySelector(".totalPaymentInput").value=(monthly*years).toFixed(2)
+        document.querySelector(".totalInterestInput").value=((monthly*years)-principle).toFixed(2);
+        document.querySelector(".im").style.display="block";
+        setTimeout(()=>{
+            document.querySelector(".im").style.display="none";
+            document.querySelector(".results").style.display="block";
+
+        },2000)
+    }
+    else{
+        const alert=document.querySelector(".alert");
+        alert.style.display="block";
+        window.setTimeout(()=>{
+            alert.style.display="none";
+
+        },2000);
+       
+       
+
+    }
+    
+    e.preventDefault();
+})
